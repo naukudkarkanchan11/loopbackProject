@@ -10,6 +10,7 @@ Install loopback using npm.
 Create loopback project.
 
      $ sudo slc loopback 
+
      and follow the steps regarding the application name and directory saving details.
     
 Create models required for the project and set their properties.
@@ -33,12 +34,14 @@ Now integrate mongodb with loopback using mongodb connector.
 Add datasource to loopback project and respective settings.
 
     $ sudo slc loopback:datasource
+
     respectively change the datasources.json and model-config.json file credentials.
     
 Save the changes and start mongod service and check the server side.
 
     $ sudo mongod -f /etc/mongod --fork
     $ sudo node .
+
     also check the database collections.
 
     $ sudo mongo
@@ -49,7 +52,8 @@ use remotemethod to give access using accepts and returns.
 Apply ACLs to the model to restrict its access.
 
     $ sudo slc loopback:acl
-    first deny access to all and assign it individually to every model
+
+    First deny access to all and assign it individually to every model.
     
 Its necessary to have users with project. So create user model and assign to mongodb datasource 
 with base class as User.
