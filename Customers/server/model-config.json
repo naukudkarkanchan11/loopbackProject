@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "customerdetails"
+  },
+  "AccessToken": {
+    "dataSource": "customerdetails",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "customerdetails",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "customerdetails",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "customerdetails",
+    "public": false
+  },
+  "customers": {
+    "dataSource": "customerdetails",
+    "public": true
+  },
+  "Admin": {
+    "dataSource": "customerdetails",
+    "public": true
+  }
+}
