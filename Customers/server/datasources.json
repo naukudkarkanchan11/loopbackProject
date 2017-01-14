@@ -11,6 +11,7 @@
     "password": "",
     "name": "customerdetails",
     "user": "",
-    "connector": "mongodb"
+    "connector": "mongodb",
+    "allowExtendedOperators": true  
   }
 }
